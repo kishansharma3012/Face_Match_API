@@ -28,9 +28,18 @@ Both Redis and Sqlite3 database can be used.
 
 ## Upload 
 User can upload the image in the database by simply browsing the image, providing the user name and clicking the button Upload. The API only allows images with only one face, and it discards the upload if images with no face or more than 1 faces are uploaded. 
-<img src="https://github.com/kishansharma3012/Face_Match_API/blob/master/etc/images_readme/upload1.png" width="500">
-<img src="https://github.com/kishansharma3012/Face_Match_API/blob/master/etc/images_readme/upload1.png" width="500">
 
+<img src="https://github.com/kishansharma3012/Face_Match_API/blob/master/etc/images_readme/upload1.png" width="500">
+<img src="https://github.com/kishansharma3012/Face_Match_API/blob/master/etc/images_readme/upload2.png" width="500">
 
+## Face match images
+User can upload two photos, and match the face in the photos by simply clicking Match them button. It will show the probability of the face match. 
+
+<img src="https://github.com/kishansharma3012/Face_Match_API/blob/master/etc/images_readme/facematch_Img.png" width="500">
+
+## Face match ID
+User can match two already uploaded image in the database by simply providing their UUID's.
+
+<img src="https://github.com/kishansharma3012/Face_Match_API/blob/master/etc/images_readme/facematch_ID.png" width="500">
 
 
