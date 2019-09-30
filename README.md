@@ -26,7 +26,7 @@ Install Redis server
 ## Database
 Both Redis and Sqlite3 database can be used. 
 
-# Features of application
+# Features
 
 ## Upload 
 User can upload the image in the database by simply browsing the image, providing the user name and clicking the button Upload. The API only allows images with only one face, and it discards the upload if images with no face or more than 1 faces are uploaded. 
