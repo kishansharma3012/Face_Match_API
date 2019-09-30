@@ -9,18 +9,13 @@ for matching the faces and for finding the facial features. It uses dlib's state
 2. git clone https://github.com/kishansharma3012/Face_Match_API.git
 3. cd Face_Match_API
 4. virtualenv FaceAPI
-Download boost from http://boost.org and proceed to boost root folder
-5. ./bootstrap.sh --with-libraries=python
+5. ./bootstrap.sh --with-libraries=python // Install Boost library from http://boost.org and then proceed to the boost folder
 6. ./b2
 7. sudo ./b2 install
 8. pip install dlib
 9. pip install Flask
 10. pip install face_recognition
 11. pip install redis // Install Redis server 
-12. wget http://download.redis.io/redis-stable.tar.gz
-13. tar xvzf redis-stable.tar.gz
-14. cd redis-stable
-15. make
 
 ## Database
 Both Redis and Sqlite3 database can be used. 
