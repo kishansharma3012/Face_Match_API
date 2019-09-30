@@ -21,6 +21,17 @@ Install Redis server
 14. cd redis-stable
 15. make
 
+## Database
+Both Redis and Sqlite3 database can be used. 
+
+# Features of application
+
+## Upload 
+User can upload the image in the database by simply browsing the image, providing the user name and clicking the button Upload. The API only allows images with only one face, and it discards the upload if images with no face or more than 1 faces are uploaded. 
+![upload image 1](https://github.com/kishansharma3012/Face_Match_API/blob/master/etc/images_readme/upload1.png)
+!![upload image 1](https://github.com/kishansharma3012/Face_Match_API/blob/master/etc/images_readme/upload2.png)
+
+
 
 
 
