@@ -16,7 +16,7 @@ Download boost from http://boost.org and proceed to boost root folder
 8. pip install dlib
 9. pip install Flask
 10. pip install face_recognition
-Install Redis server 
+// Install Redis server 
 11. pip install redis
 12. wget http://download.redis.io/redis-stable.tar.gz
 13. tar xvzf redis-stable.tar.gz
