@@ -31,7 +31,7 @@ User can upload the image in the database by simply browsing the image, providin
 ![upload image 1](https://github.com/kishansharma3012/Face_Match_API/blob/master/etc/images_readme/upload1.png | width = 100)
 !![upload image 1](https://github.com/kishansharma3012/Face_Match_API/blob/master/etc/images_readme/upload2.png | width = 100)
 
-
+<img src="https://github.com/kishansharma3012/Face_Match_API/blob/master/etc/images_readme/upload1.png" width="48">
 
 
 
