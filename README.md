@@ -1,5 +1,7 @@
 # Face_Match_API
-A web based service for matching faces using two images, two UUIDs (from redis database), finding top matched images from the database and for finding facial features
+A web based service for matching faces using two images, two UUIDs (from redis database), finding top matched images from the database and for finding facial features. This API uses face recognition library (https://pypi.org/project/face_recognition/)
+for matching the faces and for finding the facial features. It uses dlib's state-of-the-art face recognition built with deep learning. The model has an accuracy of 99.38% on the Labeled Faces in the Wild benchmark.
+
 
 ## Installation 
 
