@@ -1,0 +1,146 @@
+<!doctype html>
+<html>
+<head>
+    <title>Face Match Service</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='app.css') }}">
+    
+</head>
+<body>
+
+<div class="container">
+    <h1>Facial Recognition</h1>
+
+    <ul class="tabs">
+        <li data-section="upload">Upload</li>
+        <li data-section="face-match-ID">Face-match-ID</li>
+        <li data-section="face-match-image">Face-match-image</li>
+        <li data-section="face-match-DB">Face-match-DB</li>
+        <li data-section="face-feature">Facial-features</li>
+        
+    </ul>
+    <div id="upload">
+        <h2>upload</h2>
+        <form method="post" id="upload_post">
+            <div class="message">
+            </div>
+            <p class="description">Upload the image in the database</p>
+            <div class="form-item">
+                <label for="input-file">Face image</label>
+                <!-- <input type="file" name="file" id="input-file" accept="image/*"/> -->
+                <input type='file' name = "file" id= "input-file" accept="image/*" onchange="readURL(this, '#img_upload1');" />
+               <br/> <img id="img_upload1" src="#"/>
+            </div>
+            <div class="form-item">
+                <label>User name</label>
+                <input id="name-field" name="name" value="" type="text" placeholder="User name"/>
+            </div>
+            <div class="form-action">
+                <button type="submit">Upload</button>
+            </div>
+
+        </form>
+    </div>
+
+    <div id="face-match-ID">
+        <h2>Face-Match-ID</h2>
+
+        <form method="post" id="face-match-ID_post">
+            <div class="message">
+
+            </div>
+            <p class="description">Upload two UUIDs from database, and match faces</p>
+            <div class="form-item">
+                <label>file uuid1</label>
+                <input id="name-field1" name="name1" value="" type="text" placeholder="Uuid1" />
+                <label>file uuid2</label>
+                <input id="name-field2" name="name2" value="" type="text" placeholder="Uuid2"/>
+                <br/><img id="img_uuid1" src="#"/>
+                <img id="img_uuid2" src="#"/>
+            </div>
+
+            <div class="form-action">
+                <button type="submit">Match them!</button>
+            </div>
+        </form>
+    </div>
+
+    <div id="face-match-image">
+        <h2>Face Match Image</h2>
+
+        <form method="post" id="face-match-image_post">
+            <div class="message">
+                
+            </div>
+            <p class="description">Upload two images, and match faces</p>
+            <div class="form-item">
+                <label for="input-file1">Face image1</label>
+                <input type='file' name = "file" id= "input-file1" accept="image/*" onchange="readURL(this,'#img_upload_match1');" />
+                <label for="input-file2">Face image2</label>
+                <input type='file' name = "file" id= "input-file2" accept="image/*" onchange="readURL(this,'#img_upload_match2');" />
+                <br/><img id="img_upload_match1" src="#"/>
+                <img id="img_upload_match2" src="#"/>
+            </div>
+
+            <div class="form-action">
+                <button type="submit">Match them!</button>
+            </div>
+        </form>
+    </div>
+
+    <div id="face-match-DB">
+        <h2>Face Match DB</h2>
+
+        <form method="post" id="face-match-DB_post">
+            <div class="message">
+                
+            </div>
+            <p class="description">Upload an image to compare with the images in the database</p>
+            <div class="form-item">
+                <label for="input-file3">Face image</label>
+                <input type='file' name = "file" id= "input-file3" accept="image/*" onchange="readURL(this,'#img_upload_db1');" />
+                <br/><img id="img_upload_db1" src="#"/>
+                <br/>
+                <img id="img_upload_db2" src="#"/>
+                <img id="img_upload_db3" src="#"/>
+                <img id="img_upload_db4" src="#"/>
+
+            </div>
+
+            <div class="form-action">
+                <button type="submit">Match them!</button>
+            </div>
+        </form>
+    </div>
+
+
+    <div id="face-feature">
+        <h2>Facial-features</h2>
+        <form method="post" id="face-feature_post">
+            <div class="message">
+
+            </div>
+            <p class="description">Check the facial features in the image</p>
+            <div class="form-item">
+                <label for="input-file">Face image</label>
+                <!-- <input type="file" name="file" id="input-file" accept="image/*"/> -->
+                <input type='file' name = "file" id= "input-file" accept="image/*" onchange="readURL(this,'#img_upload_feat');" />
+                <br/><img id="img_upload_feat" src="#"/>
+                <img id= "img_result" src="#"/>
+            </div>
+         
+            <div class="form-action">
+                <button type="submit">show features</button>
+            </div>
+
+        </form>
+    </div>
+
+
+</div>
+<script type="text/javascript" src="{{ url_for('static', filename='lodash.js') }}"></script>
+<script type="text/javascript" src="{{ url_for('static', filename='immutable.js') }}"></script>
+<script type="text/javascript" src="{{ url_for('static', filename='axios.js') }}"></script>
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script type="text/javascript" src="{{ url_for('static', filename='app.js') }}"></script>
+</body>
+</html>
