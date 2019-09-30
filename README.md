@@ -42,4 +42,14 @@ User can match two already uploaded image in the database by simply providing th
 
 <img src="https://github.com/kishansharma3012/Face_Match_API/blob/master/etc/images_readme/facematch_ID.png" width="500">
 
+## Face match Database
+User can check the images which are the nearest neighbour to the uploaded image.
+
+<img src="https://github.com/kishansharma3012/Face_Match_API/blob/master/etc/images_readme/facematch_DB.png" width="500">
+
+
+## Facial features
+User can check the facial features/ landmarks (such as Chin, Jawline, eyes, eyebrows, upper lip and lower lip) of the uploaded image
+
+<img src="https://github.com/kishansharma3012/Face_Match_API/blob/master/etc/images_readme/facial_features.png" width="500">
 
